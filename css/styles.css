@@ -1,0 +1,27 @@
+/* Colores personalizados */
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+/* Evita que el contenido toque los bordes */
+.container {
+  max-width: 960px;
+}
+
+/* Responsive ajuste */
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
