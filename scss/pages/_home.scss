@@ -1,8 +1,11 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
 main {
-  @include responsive-padding;
-  color: $text-color;
+  @include m.responsive-padding;
+  color: v.$text-color;
 
   h2 {
-    @extend .fade-in;
+    font-weight: bold;
   }
 }

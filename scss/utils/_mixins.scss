@@ -1,5 +1,7 @@
+@use 'variables' as v;
+
 @mixin button-style {
-  background-color: $primary;
+  background-color: v.$primary;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -7,7 +9,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $primary-dark;
+    background-color: v.$primary-dark;
   }
 }
 

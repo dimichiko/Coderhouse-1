@@ -1,19 +1,106 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   background-color: $primary;
- *   |                     ^^^^^^^^
- *   '
- *   scss/utils/_mixins.scss 2:21       button-style()
- *   scss/components/_buttons.scss 4:3  @use
- *   scss/main.scss 8:1                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    background-color: $primary;\a   \2502                      ^^^^^^^^\a   \2575 \a   scss/utils/_mixins.scss 2:21       button-style()\a   scss/components/_buttons.scss 4:3  @use\a   scss/main.scss 8:1                 root stylesheet";
+header nav a {
+  text-decoration: none;
+  transition: color 0.3s;
 }
+header nav a:hover {
+  color: rgb(102, 175.8, 255);
+}
+
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+main {
+  padding: 1rem;
+  color: #333;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+}
+main h2 {
+  font-weight: bold;
+}
+
+.fade-in, main h2 {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main {
+  padding: 1rem;
+  color: #333;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.producto-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.producto-card .card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+.producto-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.producto-card .card-body .card-title {
+  font-weight: 600;
+}
+.producto-card .card-body .btn-custom {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.producto-card .card-body .btn-custom:hover {
+  background-color: #0056b3;
+}
+
+/*# sourceMappingURL=styles.css.map */
