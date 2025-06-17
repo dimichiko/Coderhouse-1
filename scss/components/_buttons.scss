@@ -1,5 +1,7 @@
+@use '../utils/mixins' as m;
+
 .btn-custom {
-  @include button-style;
+  @include m.button-style;
   font-weight: bold;
   text-transform: uppercase;
 }

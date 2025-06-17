@@ -1,27 +1,19 @@
-/* Colores personalizados */
-body {
-  background-color: #f8f9fa;
-  color: #212529;
-  font-family: Arial, sans-serif;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |   background-color: $primary;
+ *   |                     ^^^^^^^^
+ *   '
+ *   scss/utils/_mixins.scss 2:21       button-style()
+ *   scss/components/_buttons.scss 4:3  @use
+ *   scss/main.scss 8:1                 root stylesheet */
 
-main {
-  padding-bottom: 2rem;
-}
-
-/* Evita que el contenido toque los bordes */
-.container {
-  max-width: 960px;
-}
-
-/* Responsive ajuste */
-@media (max-width: 600px) {
-  h1, h2 {
-    font-size: 1.5rem;
-  }
-
-  nav a {
-    display: block;
-    margin-bottom: 5px;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    background-color: $primary;\a   \2502                      ^^^^^^^^\a   \2575 \a   scss/utils/_mixins.scss 2:21       button-style()\a   scss/components/_buttons.scss 4:3  @use\a   scss/main.scss 8:1                 root stylesheet";
 }
