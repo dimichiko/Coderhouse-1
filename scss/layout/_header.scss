@@ -1,0 +1,10 @@
+header {
+  nav a {
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten($primary, 20%);
+    }
+  }
+}

@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto - Mi Sitio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="bg-dark text-white p-3">
     <div class="container d-flex justify-content-between align-items-center">
       <h1 class="h4 m-0">Mi Sitio</h1>
-      <nav>
+      <nav aria-label="Navegación principal">
         <a href="index.html" class="text-white me-3">Inicio</a>
         <a href="about.html" class="text-white me-3">Sobre mí</a>
         <a href="contact.html" class="text-white">Contacto</a>
@@ -19,27 +19,29 @@
     </div>
   </header>
 
-  <main class="container mt-4">
-    <h2>Contacto</h2>
-    <form>
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" name="nombre" required />
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" name="email" required />
-      </div>
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" name="mensaje" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+  <main class="container my-5">
+    <section>
+      <h2>Contacto</h2>
+      <form aria-label="Formulario de contacto" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input id="nombre" type="text" class="form-control" name="nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input id="email" type="email" class="form-control" name="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea id="mensaje" class="form-control" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
   </main>
 
-  <footer class="bg-light text-center p-3 mt-5">
-    <small>&copy; 2025 Mi Sitio</small>
+  <footer class="bg-light text-center p-3 mt-auto">
+    <small>&copy; 2025 Mi Sitio. Todos los derechos reservados.</small>
   </footer>
 
   <script src="js/script.js"></script>

@@ -1,0 +1,8 @@
+main {
+  @include responsive-padding;
+  color: $text-color;
+
+  h2 {
+    @extend .fade-in;
+  }
+}
