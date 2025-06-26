@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catálogo - Hydra Steel</title>
+    <meta name="description" content="Catálogo completo de botellas Hydra Steel. Botellas de acero inoxidable premium en diferentes tamaños y colores. Mantén tu bebida fría 24h o caliente 12h." />
+    <meta name="keywords" content="catálogo botellas, comprar botellas acero, botellas 750ml, botellas 500ml, hidratación premium" />
+    <meta name="author" content="Hydra Steel" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Catálogo de Productos - Hydra Steel" />
+    <meta property="og:description" content="Descubre nuestra colección de botellas de acero inoxidable premium" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tusitio.com/productos.html" />
+    <title>Catálogo de Productos | Hydra Steel</title>
+    <link rel="canonical" href="https://tusitio.com/productos.html" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -11,59 +21,140 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="bg-dark text-white p-3">
+    <header class="bg-dark text-white p-3" role="banner">
       <div class="container d-flex justify-content-between align-items-center">
-        <h1 class="h4 m-0">Hydra Steel</h1>
-        <nav aria-label="Navegación principal">
-          <a href="index.html" class="text-white me-3">Inicio</a>
-          <a href="about.html" class="text-white me-3">Nosotros</a>
-          <a href="productos.html" class="text-white me-3">Productos</a>
-          <a href="contact.html" class="text-white">Contacto</a>
+        <h1 class="h4 m-0">
+          <a href="index.html" class="text-white text-decoration-none" aria-label="Hydra Steel - Inicio">
+            Hydra Steel
+          </a>
+        </h1>
+        <nav aria-label="Navegación principal" role="navigation">
+          <ul class="nav-list d-flex list-unstyled m-0">
+            <li><a href="index.html" class="text-white me-3 nav-link">Inicio</a></li>
+            <li><a href="about.html" class="text-white me-3 nav-link">Nosotros</a></li>
+            <li><a href="productos.html" class="text-white me-3 nav-link active" aria-current="page">Productos</a></li>
+            <li><a href="galeria.html" class="text-white me-3 nav-link">Galería</a></li>
+            <li><a href="contact.html" class="text-white nav-link">Contacto</a></li>
+          </ul>
         </nav>
+        <button class="navbar-toggler d-md-none" type="button" aria-label="Menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </header>
 
-    <main class="container my-5">
-      <h2 class="text-center mb-4">Catálogo de Botellas</h2>
-      <section class="row justify-content-center">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow producto-card">
-            <img
-              src="assets/img/Gone are the days of basic hydration vessels_ This….jpg"
-              class="card-img-top"
-              alt="Botella acero negra 750ml"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Botella Acero 750ml</h5>
-              <p class="card-text">
-                Mantiene tu bebida fría 24h o caliente 12h. Libre de BPA.
-              </p>
-              <button class="btn-custom">Comprar</button>
+    <main class="container my-5" role="main">
+      <section class="products-section">
+        <header class="text-center mb-5">
+          <h2 class="products-title fade-in">Catálogo de Botellas</h2>
+          <p class="products-description lead">
+            Descubre nuestra colección premium de botellas de acero inoxidable. 
+            Diseñadas para mantener tu bebida en la temperatura perfecta.
+          </p>
+        </header>
+
+        <div class="products-grid">
+          <article class="product-card-container">
+            <div class="card h-100 shadow producto-card">
+              <img
+                src="assets/img/Gone are the days of basic hydration vessels_ This….jpg"
+                class="card-img-top"
+                alt="Botella de acero inoxidable negro 750ml con tapa rosca"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Botella Acero 750ml</h3>
+                <p class="card-text">
+                  Mantiene tu bebida fría 24h o caliente 12h. Libre de BPA, 
+                  doble pared de acero inoxidable para máxima eficiencia térmica.
+                </p>
+                <ul class="product-features">
+                  <li>✅ Capacidad: 750ml</li>
+                  <li>✅ Material: Acero inoxidable 18/8</li>
+                  <li>✅ Libre de BPA</li>
+                  <li>✅ Tapa rosca segura</li>
+                </ul>
+                <div class="product-price">
+                  <span class="price">$29.99</span>
+                  <span class="original-price">$39.99</span>
+                </div>
+                <button class="btn-custom" aria-label="Agregar botella 750ml al carrito">
+                  Comprar
+                </button>
+              </div>
             </div>
-          </div>
+          </article>
+
+          <article class="product-card-container">
+            <div class="card h-100 shadow producto-card">
+              <img
+                src="assets/img/Stainless Steel drinking water bottle 700 ml….jpg"
+                class="card-img-top"
+                alt="Botella de acero inoxidable rosa 500ml compacta"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Botella Rosa 500ml</h3>
+                <p class="card-text">
+                  Ideal para oficina, gym o viajes. Diseño elegante y compacto 
+                  que se adapta a cualquier estilo de vida.
+                </p>
+                <ul class="product-features">
+                  <li>✅ Capacidad: 500ml</li>
+                  <li>✅ Material: Acero inoxidable 18/8</li>
+                  <li>✅ Libre de BPA</li>
+                  <li>✅ Tapa flip-top</li>
+                </ul>
+                <div class="product-price">
+                  <span class="price">$24.99</span>
+                  <span class="original-price">$32.99</span>
+                </div>
+                <button class="btn-custom" aria-label="Agregar botella 500ml al carrito">
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow producto-card">
-            <img
-              src="assets/img/Stainless Steel drinking water bottle 700 ml….jpg"
-              class="card-img-top"
-              alt="Botella acero rosa 500ml"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Botella Rosa 500ml</h5>
-              <p class="card-text">
-                Ideal para oficina, gym o viajes. Diseño elegante y compacto.
-              </p>
-              <button class="btn-custom">Comprar</button>
+        <section class="product-benefits mt-5">
+          <h3 class="text-center mb-4">¿Por qué elegir nuestras botellas?</h3>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <div class="benefit-icon">🌡️</div>
+              <h4>Control de Temperatura</h4>
+              <p>Doble pared de acero inoxidable que mantiene las bebidas frías por 24 horas o calientes por 12 horas.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">♻️</div>
+              <h4>Eco-Friendly</h4>
+              <p>Reduce el uso de plásticos desechables y contribuye a un planeta más limpio.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🛡️</div>
+              <h4>Durabilidad</h4>
+              <p>Construidas para durar años, resistentes a golpes y caídas accidentales.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">💧</div>
+              <h4>Sin Fugas</h4>
+              <p>Sistema de cierre hermético que previene derrames y mantiene la frescura.</p>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </main>
 
-    <footer class="bg-light text-center p-3 mt-auto">
-      <small>&copy; 2025 Hydra Steel. Todos los derechos reservados.</small>
+    <footer class="bg-light text-center p-3 mt-auto" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <small>&copy; 2025 Hydra Steel. Todos los derechos reservados.</small>
+          <div class="footer-links mt-2">
+            <a href="privacy.html" class="text-muted me-3">Privacidad</a>
+            <a href="terms.html" class="text-muted">Términos</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
