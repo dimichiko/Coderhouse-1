@@ -20,3 +20,9 @@
     padding: 2rem;
   }
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -26,6 +26,13 @@
     .btn-custom {
       @include m.button-style;
       margin-top: 1rem;
+      @extend .bounce;
     }
   }
+}
+
+.product-price {
+  @include m.flex-center;
+  margin: 1rem 0;
+  text-align: center;
 }
